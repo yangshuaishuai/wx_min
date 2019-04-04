@@ -1,0 +1,55 @@
+<view class='weui-cells__title'>工单编号： {{dingdan}} </view>
+
+<!-- 维修 -->
+<view class="weui-form-preview">
+  <view class="weui-form-preview__hd">
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">状态</view>
+      <view class="weui-form-preview__value_in-hd">设备维修</view>
+    </view>
+  </view>
+  <view class="weui-form-preview__bd">
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">维修人</view>
+      <view class="weui-form-preview__value"><text>{{wxName}}</text></view>
+    </view>
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">接单时间</view>
+      <view class="weui-form-preview__value">{{jdTime}}</view>
+    </view>
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">到场时间</view>
+      <view class="weui-form-preview__value">{{dcTime}}</view>
+    </view>
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">配件</view>
+      <view class="weui-form-preview__value">{{peijian}}</view>
+    </view>
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">配件照片</view>
+      <view class="weui-form-preview__value" style='color:#0bb20c' bindtap="showPj">点击查看</view>
+    </view>
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">总价</view>
+      <view class="weui-form-preview__value">{{price}}</view>
+    </view>
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">完成照片</view>
+      <view class="weui-form-preview__value" style='color:#0bb20c' bindtap="showAllPj">点击查看</view>
+     
+      
+    </view>
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">维修结果</view>
+      <view class="weui-form-preview__value">{{wxResult}}</view>
+    </view>
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">完成时间</view>
+      <view class="weui-form-preview__value">{{finshTime}}</view>
+    </view>
+  </view>
+  <view class="weui-form-preview__ft">
+    <navigator url="" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">评价  </navigator>
+  </view>
+ 
+</view>
