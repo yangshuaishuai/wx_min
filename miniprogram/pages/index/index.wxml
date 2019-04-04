@@ -24,27 +24,23 @@
       <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
     </view>
   </view>
-
-
-  <!-- 操作数据库 -->
-  <view class="uploader">
-    <navigator url="../databaseGuide/databaseGuide" open-type="navigate" class="uploader-text">
-      <text>前端操作数据库</text>
-    </navigator>
-  </view>
-
-  <!-- 新建云函数 -->
-  <view class="uploader">
-    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
-      <text>快速新建云函数</text>
-    </navigator>
-  </view>
+ 
  <!--报修人评价--> 
 <view class='uploader'>
     <navigator url='../applicantEvalu/applicantEvalu' open-type='navigate' class="uploader-text">
         <text>报修人评价</text>
     </navigator>
 </view>
+
+
+ 
+ <!--维修人-接单--> 
+<view class='uploader'>
+    <navigator url='../wx_jieDan/wx_jieDan' open-type='navigate' class="uploader-text">
+        <text>维修人接单</text>
+    </navigator>
+</view>
+
 
 
 

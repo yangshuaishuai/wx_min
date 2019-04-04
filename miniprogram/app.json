@@ -1,20 +1,20 @@
 {
   "pages": [
-    "pages/applicantEvalu/applicantEvalu",
     "pages/index/index",
+    "pages/applicantEvalu/applicantEvalu",
     "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
     "pages/addFunction/addFunction",
     "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib"
+    "pages/chooseLib/chooseLib",
+    "pages/wx_jieDan/wx_jieDan"
+    
     
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "智能网点",
     "navigationBarTextStyle": "black"
   }
 }
