@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+
+  <path-view keepLoc="{{true}}"
+             unnormalizedValue="{{unnormalizedValue}}"
+             btnTxt='选中本项'
+             contentKey="name"
+             catchtapBtn="selThis"></path-view>
+
+</view>

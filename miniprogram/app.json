@@ -1,9 +1,8 @@
 {
   "pages": [
-    "pages/pingjia/pingjia",
-    
+    "pages/treeTest/treeTest",
     "pages/index/index",
-    
+    "pages/pingjia/pingjia",
     "pages/deployFunctions/deployFunctions",   
     "pages/gongdan_pingjia/gongdan_pingjia",
     "pages/applicantEvalu/applicantEvalu",
