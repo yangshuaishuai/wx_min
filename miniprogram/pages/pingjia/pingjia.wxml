@@ -1,0 +1,58 @@
+
+
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__hd" style="text-align:center;margin-top:5%">
+          <font style="color:#808080">请你对本次服务进行评价</font>
+       
+    </view>
+    <view class="page__bd">
+  
+      <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
+       <view style="margin:5% 5% 5% 25%">
+            <image wx:for="{{images}}" wx:key="idx" wx:for-index="idx"  src='{{item}}'  bindtap='chickImage' data-index='{{idx}}' 
+            style="width: 20px; height: 20px;margin-left:5% " />
+        </view>
+
+        <view >            
+        <view class="flex-wrp" style="flex-direction:row;">
+            <view class="flex-item item {{selected[0]}}"  bindtap='chickItem' data-index="0">
+                {{pjItem[0]}}
+            </view>
+            <view class="flex-item item {{selected[1]}}"   bindtap='chickItem' data-index="1">
+              {{pjItem[1]}}
+            </view>
+            <view class="flex-item item {{selected[2]}}"  bindtap='chickItem' data-index="2">
+              {{pjItem[2]}}
+            </view>
+         
+          </view>
+        <view class="flex-wrp" style="flex-direction:row;margin:10px 0px 10px 0px">
+            <view class="flex-item item  {{selected[3]}}"    bindtap='chickItem' data-index="3">
+               {{pjItem[3]}}
+            </view>
+            <view class="flex-item item  {{selected[4]}}"  bindtap='chickItem' data-index="4">
+              {{pjItem[4]}}
+            </view>
+            <view class="flex-item item  {{selected[5]}}"  bindtap='chickItem' data-index="5">
+              {{pjItem[5]}}
+            </view>
+          </view>
+          
+        </view>
+
+         <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="期待你的任何建议,请在这里留言" 
+                    style="height: 3.3em; " />
+                    <view class="weui-textarea-counter"  >0/200</view>
+                </view>
+            </view>
+        </view>
+
+  
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" bindtap="showTopTips">确定</button>
+        </view>
+    </view>
+</view>

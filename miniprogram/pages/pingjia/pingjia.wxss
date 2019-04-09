@@ -1,0 +1,44 @@
+ @import "../../weui.wxss";
+ .placeholder{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #EBEBEB;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #cfcfcf;
+}
+.pingJiaView{
+    width: 20px;
+    height:10px;
+    float: left;
+    margin-left: 10%
+}
+
+.page-section{
+  margin-bottom: 20rpx;
+}
+.page-section{
+  margin-bottom: 20rpx;
+}
+
+.flex-wrp {display: flex;}
+
+.item {
+  border-bottom: 20px;
+  width: 20%;
+  height: 30px;
+  border:2px  solid #EBEBEB;
+  margin-left: 10%;
+  font-family:Microsoft YaHei;
+  font-size: 80%;
+  color: #808080;
+  text-align:center;
+  line-height: 190%;
+  border-radius: 10px;
+  
+  }
+.selected{
+  border:2px  solid red;
+  color: red;
+  }

@@ -42,6 +42,20 @@
 </view>
 
 
+ <!--维修人-接单--> 
+<view class='uploader'>
+    <navigator url='../gongdan-pingjia/gongdan-pingjia' open-type='navigate' class="uploader-text">
+        <text>工单评价</text>
+    </navigator>
+</view>
+
+
+<!--评价--> 
+<view class='uploader'>
+    <navigator url='../pingjia/pingjia' open-type='navigate' class="uploader-text">
+        <text>评价</text>
+    </navigator>
+</view>
 
 
 

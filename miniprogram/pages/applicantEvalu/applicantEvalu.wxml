@@ -5,7 +5,7 @@
   <view class="weui-form-preview__hd">
     <view class="weui-form-preview__item">
       <view class="weui-form-preview__label">状态</view>
-      <view class="weui-form-preview__value_in-hd">设备维修</view>
+      <view class="weui-form-preview__value_in-hd">{{status}}</view>
     </view>
   </view>
   <view class="weui-form-preview__bd">
@@ -49,8 +49,8 @@
     </view>
   </view>
   <view class="weui-form-preview__ft">
-    <navigator url="../index/index" class="weui-form-preview__btn weui-form-preview__btn_primary" 
-      hover-class="weui-form-preview__btn_active">评价  </navigator>
+    <navigator url="../pingjia/pingjia" class="weui-form-preview__btn weui-form-preview__btn_primary" 
+      hover-class="weui-form-preview__btn_active">评价</navigator>
   </view>
  
 </view>

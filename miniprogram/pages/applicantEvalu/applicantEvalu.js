@@ -74,7 +74,7 @@ const app = getApp()
   onShareAppMessage: function () {
     
   },
-
+  //显示图片
   showPj:function(){
     var tempFilePaths=this.data.tempFilePaths;
       wx.previewImage({
@@ -83,6 +83,7 @@ const app = getApp()
     })
  
   },
+  //显示图片
   showAllPj:function(){
     var _this = this
      wx.chooseImage({

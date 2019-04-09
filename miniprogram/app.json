@@ -1,13 +1,11 @@
 {
   "pages": [
+    "pages/pingjia/pingjia",        
     "pages/index/index",
+    "pages/gongdan-pingjia/gongdan-pingjia",
+     
     "pages/applicantEvalu/applicantEvalu",
-    "pages/userConsole/userConsole",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib",
     "pages/wx_jieDan/wx_jieDan"
-    
     
   ],
   "window": {
@@ -16,5 +14,22 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "智能网点",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+  "color": "#a9b7b7",
+  "selectedColor": "#11cd6e",
+  "borderStyle": "white",
+  "list":[{
+
+        "pagePath": "pages/index/index",
+        "text": "首页"
+    },{
+
+   "pagePath": "pages/wx_jieDan/wx_jieDan",
+    "text": "接单"
+
+    }]
   }
+
+
 }
