@@ -28,7 +28,7 @@
  <!--报修人评价--> 
 <view class='uploader'>
     <navigator url='../applicantEvalu/applicantEvalu' open-type='navigate' class="uploader-text">
-        <text>报修人评价</text>
+        <text>报修人-评价</text>
     </navigator>
 </view>
 
@@ -37,15 +37,23 @@
  <!--维修人-接单--> 
 <view class='uploader'>
     <navigator url='../wx_jieDan/wx_jieDan' open-type='navigate' class="uploader-text">
-        <text>维修人接单</text>
+        <text>维修人-接单</text>
+    </navigator>
+</view>
+
+ <!--运维组长-转单--> 
+<view class='uploader'>
+    <navigator url='../gongdan_zhuan/gongdan_zhuan' open-type='navigate' class="uploader-text">
+        <text>运维组长-转单</text>
     </navigator>
 </view>
 
 
+
  <!--维修人-接单--> 
 <view class='uploader'>
-    <navigator url='../gongdan-pingjia/gongdan-pingjia' open-type='navigate' class="uploader-text">
-        <text>工单评价</text>
+    <navigator url='../gongdan_pingjia/gongdan_pingjia' open-type='navigate' class="uploader-text">
+        <text>运维组长-最终确认</text>
     </navigator>
 </view>
 

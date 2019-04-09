@@ -1,5 +1,3 @@
-
-
 <view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
     <view class="page__hd" style="text-align:center;margin-top:5%">
           <font style="color:#808080">请你对本次服务进行评价</font>
@@ -51,7 +49,7 @@
         </view>
 
   
-        <view class="weui-btn-area">
+        <view class="weui-btn-area" style=''>
             <button class="weui-btn" type="primary" bindtap="showTopTips">确定</button>
         </view>
     </view>

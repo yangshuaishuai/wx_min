@@ -55,7 +55,6 @@
   },
   chickItem:function(e){
      var num = parseInt(e.currentTarget.dataset.index);
-    console.log(e);
      var selected = this.data.selected;
       
     if (selected[num]=="selected"){
@@ -66,7 +65,5 @@
     this.setData({
       selected: selected
     }) 
- 
    }
-  
 });
