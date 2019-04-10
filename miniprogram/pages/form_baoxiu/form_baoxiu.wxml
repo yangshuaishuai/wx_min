@@ -1,0 +1,95 @@
+<view class='weui-cells'>
+  <view class='weui-cell weui-cell_input'>
+    <view class='weui-cell__hd'>
+      <view class='weui-label'>设备名称</view>
+    </view>
+    <view class='weui-cell__bd'>
+      <input class='weui-input' placeholder='一体打印机' />
+    </view>
+  </view>
+  <view class='weui-cell weui-cell_input'>
+    <view class='weui-cell__hd'>
+      <view class='weui-label'>设备型号</view>
+    </view>
+    <view class='weui-cell__bd'>
+      <input class='weui-input' placeholder='hp-18990' />
+    </view>
+  </view>
+  <view class='weui-cell weui-cell_input'>
+    <view class='weui-cell__hd'>
+      <view class='weui-label'>设备厂商</view>
+    </view>
+    <view class='weui-cell__bd'>
+      <input class='weui-input' placeholder='惠普' />
+    </view>
+  </view>
+  <view class='weui-cell weui-cell_input'>
+    <view class='weui-cell__hd'>
+      <view class='weui-label'>使用机构</view>
+    </view>
+    <view class='weui-cell__bd'>
+      <input class='weui-input' placeholder='苏州市分行营业部' />
+    </view>
+  </view>
+  <view class='weui-cell weui-cell_input'>
+    <view class='weui-cell__hd'>
+      <view class='weui-label'>报修人</view>
+    </view>
+    <view class='weui-cell__bd'>
+      <input class='weui-input' placeholder='卢亚迪' />
+    </view>
+  </view>
+</view>
+
+<view class='weui-cells'>
+  <view class='weui-cell'>
+    <view class='weui-cell__bd'>
+      <view class='weui-uploader'>
+        <view class='weui-uploader__hd'>
+          <view class='weui-uploader__title'>图片上传</view>
+          <view class='weui-uploader__info'>{{files.length}}/6</view>
+        </view>
+        <view class='weui-uploader__bd'>
+          <view class='weui-uploader__files' id='uploaderFiles'>
+            <block wx:for='{{files}}' wx:key='*this'>
+              <view class='weui-uploader__file weui-uploader__file_status' bindtap='previewImage' id='{{item}}'>
+                <image class='weui-uploader__img' src='{{item}}' mode='aspectFill' />
+                <view class='weui-uploader__file-content'>设备拍照</view>
+              </view>
+            </block>
+           <!--
+            <view class='weui-uploader__file weui-uploader__file_status'>
+              <image class='weui-uploader__img' src='../images/pic_160.png' mode='aspectFill' />
+              <view class='weui-uploader__file-content'>
+                <icon type='warn' size='23' color='#F43530'></icon>
+              </view>
+            </view>
+
+
+            <view class='weui-uploader__file weui-uploader__file_status'>
+              <image class='weui-uploader__img' src='../images/pic_160.png' mode='aspectFill' />
+              <view class='weui-uploader__file-content'>50%</view>
+            </view>
+          -->
+          </view>
+          <view class='weui-uploader__input-box'>
+            <view class='weui-uploader__input' bindtap='chooseImage'></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='weui-cells'>
+  <view class='weui-cell'>
+    <view class='weui-cell__bd'>
+      <textarea class='weui-textarea' placeholder='请输入故障描述，包括故障发生的场景和故障的表现' style='height: 3.3em' />
+      <view class='weui-textarea-counter'>0/200</view>
+    </view>
+  </view>
+</view>
+
+<view class='weui-btn-area'>
+  <button class='weui-btn' type='primary' bindtap=''>提交报修</button>
+</view>

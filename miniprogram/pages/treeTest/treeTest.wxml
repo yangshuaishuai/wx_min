@@ -5,6 +5,7 @@
              unnormalizedValue="{{unnormalizedValue}}"
              btnTxt='选中本项'
              contentKey="name"
-             catchtapBtn="selThis"></path-view>
+             catchtapBtn="selThis">
+    </path-view>
 
 </view>

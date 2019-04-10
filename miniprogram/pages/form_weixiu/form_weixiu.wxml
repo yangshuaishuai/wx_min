@@ -1,0 +1,122 @@
+<!-- <view>
+  <view class='weui-cells__title'>您现在所在的位置</view>
+  <view class='weui-cells weui-cells_after-title'>
+    <view class='weui-cell'>
+      <view class='weui-cell__bd'>
+        <textarea class='weui-textarea' placeholder='苏州市姑苏区观前街123号' style='height: 3.3em' />
+        <view class='weui-textarea-counter' style='color:#0bb20c'>重新定位</view>
+      </view>
+    </view>
+  </view>
+    <view class='weui-btn-area'>
+    <button class='weui-btn' type='primary' bindtap=''>签到进场</button>
+  </view>
+</view> -->
+
+<view>
+
+  <view class='weui-cells'>
+    <view class='weui-cell'>
+      <view class='weui-cell__bd'>
+        <view class='weui-uploader'>
+          <view class='weui-uploader__hd'>
+            <view class='weui-uploader__title'>配件照片上传</view>
+            <view class='weui-uploader__info'>{{files.length}}/6</view>
+          </view>
+          <view class='weui-uploader__bd'>
+            <view class='weui-uploader__files' id='uploaderFiles'>
+              <block wx:for='{{files}}' wx:key='*this'>
+                <view class='weui-uploader__file weui-uploader__file_status' bindtap='previewImage' id='{{item}}'>
+                  <image class='weui-uploader__img' src='{{item}}' mode='aspectFill' />
+                  <view class='weui-uploader__file-content'>配件</view>
+                </view>
+              </block>
+             <!--
+              <view class='weui-uploader__file weui-uploader__file_status'>
+                <image class='weui-uploader__img' src='../images/pic_160.png' mode='aspectFill' />
+                <view class='weui-uploader__file-content'>
+                  <icon type='warn' size='23' color='#F43530'></icon>
+                </view>
+              </view>
+              
+              <view class='weui-uploader__file weui-uploader__file_status'>
+                <image class='weui-uploader__img' src='../images/pic_160.png' mode='aspectFill' />
+                <view class='weui-uploader__file-content'>50%</view>
+              </view>
+           
+            -->
+             </view>
+            <view class='weui-uploader__input-box'>
+              <view class='weui-uploader__input' bindtap='chooseImage'></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='weui-cells'>
+
+    <view class='weui-cell weui-cell_input'>
+      <view class='weui-cell__hd'>
+        <view class='weui-label'>到场日期</view>
+      </view>
+      <view class='weui-cell__bd'>
+       <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+              <view class="weui-input">{{date}}</view>
+          </picker>
+      </view>
+    </view>
+    
+ <view class='weui-cell weui-cell_input'>
+      <view class='weui-cell__hd'>
+        <view class='weui-label'>到场时间</view>
+      </view>
+      <view class='weui-cell__bd'>
+       <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+                        <view class="weui-input">{{time}}</view>
+                    </picker>
+      </view>
+    </view>
+
+
+    <view class='weui-cell weui-cell_input'>
+      <view class='weui-cell__hd'>
+        <view class='weui-label'>使用配件</view>
+      </view>
+      <view class='weui-cell__bd'>
+        <input class='weui-input' placeholder='请输入使用配件的型号' />
+      </view>
+    </view>
+    <view class='weui-cell weui-cell_input'>
+      <view class='weui-cell__hd'>
+        <view class='weui-label'>配件数量</view>
+      </view>
+      <view class='weui-cell__bd'>
+        <input class='weui-input' placeholder='请输入配件数量' />
+      </view>
+    </view>
+    <view class='weui-cell weui-cell_input'>
+      <view class='weui-cell__hd'>
+        <view class='weui-label'>配件总价</view>
+      </view>
+      <view class='weui-cell__bd'>
+        <input class='weui-input' placeholder='请输入配件总价格' />
+      </view>
+      <view class='weui-cell__ft'>元</view>
+    </view>
+    <view class='weui-cell weui-cell_input'>
+      <view class='weui-cell__hd'>
+        <view class='weui-label'>维修结果</view>
+      </view>
+      <view class='weui-cell__bd'>
+        <input class='weui-input' placeholder='请选择维修结果' />
+      </view>
+    </view>
+  </view>
+
+  <view class='weui-btn-area'>
+    <button class='weui-btn' type='primary' bindtap=''>提交维修结果</button>
+  </view>
+
+</view>

@@ -1,0 +1,10 @@
+<view class="weui-cells__title">请选择要转派给哪位维修员</view>
+<view class="weui-cells weui-cells_after-title">
+  <navigator wx:for='{{list}}' url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;background-color:#999"></image>
+    </view>
+    <view class="weui-cell__bd">帅帅杨{{index}}</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">正在进行{{list[index]}}笔维修</view>
+  </navigator>
+</view>

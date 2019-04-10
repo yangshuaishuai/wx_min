@@ -28,10 +28,11 @@
   flex-direction: row;
   box-sizing: border-box;
   margin-top: -1px;
-  width: 100%;
+  width: 350px;
   height: 40px;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
+  
 }
 .list-view-item .title {
   padding-left: 20rpx;
@@ -39,7 +40,7 @@
   line-height: 40px;
 }
 .list-view-item .tip {
-  font-size: 10px;
+  font-size: 14px;
   line-height: 40px;
 }
 .list-view-item .btn {

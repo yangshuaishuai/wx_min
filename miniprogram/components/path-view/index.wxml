@@ -36,7 +36,7 @@
       <text class="title"
             space="ensp">{{item[contentKey]}} </text>
       <text wx:if="{{item.children}}"
-            class="tip">（进入下一级）</text>
+            class="tip"></text>
       <view class="btn"
             catchtap="tapBtn"
             data-item="{{item}}">{{btnTxt}}</view>
