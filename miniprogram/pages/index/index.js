@@ -117,7 +117,7 @@ Page({
     })
   },
   showMap:function(){
-    console.log("come in ")
+    console.log(" come in ")
     wx.getLocation({
       type: 'gcj02', // 返回可以用于wx.openLocation的经纬度
       success(res) {
@@ -125,7 +125,7 @@ Page({
         const longitude = res.longitude
         console.log(latitude),//纬度
         console.log(longitude)//经度
-         wx.openLocation({
+        wx.openLocation({
           latitude,
           longitude,
           scale: 18
@@ -133,5 +133,4 @@ Page({
       }
     })
   }
-
 })
