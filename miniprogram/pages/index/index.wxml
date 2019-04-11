@@ -68,7 +68,8 @@
 <view class='uploader'>
      <view class="uploader-text" bindtap='showMap'>
        <text>获取地址</text>
-     </view>
+     </view> 
+     
       
      
 </view>
